@@ -43,12 +43,27 @@ for (let i = 0; i < teachers.length; i++) {
 
   const CurrentFabio = teachers[i];
   if (CurrentFabio === "Fabio") {
+    console.log("Trovato Fabio");
     isFabioPresent = true;
 
   }
 }
 console.log(isFabioPresent);
+/**
+ * const isFabioPresent = teachers.includes("Fabio");
+ * console.log(isFabioPresent);
+ */
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = teachers.join(",");
 console.log(teachersString);
+
+/**
+ * const teachersString="";
+ * 
+ * for(let i =0;i<teachers.length;i++) {
+ * const curTeacher = teachers[i];
+ * teachersString=teachersString + ", "+curTeacher;
+ * }
+ * console.log(teachersString);
+ */
